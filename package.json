@@ -1,0 +1,31 @@
+{
+  "name": "yi-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13403111884/yi-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13403111884/yi-cli/issues"
+  },
+  "homepage": "https://github.com/13403111884/yi-cli#readme",
+  "bin": {
+    "yi": "index.js"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "commander": "^3.0.1",
+    "download-git-repo": "^2.0.0",
+    "handlebars": "^4.2.0",
+    "inquirer": "^7.0.0",
+    "ora": "^3.4.0"
+  }
+}
