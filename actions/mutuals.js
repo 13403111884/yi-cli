@@ -1,6 +1,8 @@
 import Fs from 'fs' // 文件操作
 import Inqurer from 'inquirer' // 终端&用户 交互工具
 import Handlebars from 'handlebars' // 模板引擎
+import Chalk from 'chalk' // 文案颜色
+import LogSymbols from 'log-symbols' // 状态图标
 import { packageDemo } from './../config/paramsConfig' 
 
 export const init = (projectName) => {
@@ -19,7 +21,7 @@ export const init = (projectName) => {
         info
       }
     } catch (e) {
-      e && console.log('本地不存在 package.json 文件, 创建了新的 package.json .')
+      e && console.log(LogSymbols.info, Chalk.yellow('模板里不存在 package.json 文件, 创建了新的 package.json .'))
       return {
         packageConfig: packageDemo,
         info
@@ -28,7 +30,12 @@ export const init = (projectName) => {
   }).then(res => {
     const packageResult = Handlebars.compile(res.packageConfig)(res.info)
     Fs.writeFile(packageTemplate, packageResult, err => {
-      err && console.log(err)
+      if (err) {
+        console.log(err)
+        console.log(LogSymbols.error, Chalk.red('初始化模板失败, package.json 未生成'))
+      } else {
+        console.log(LogSymbols.success, Chalk.green('初始化模板完成'))
+      }
     })
   })
 }

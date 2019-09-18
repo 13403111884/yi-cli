@@ -1,21 +1,27 @@
 export const templates = {
-  "tpl-1": {
-    name: 'tpl-1',
-    description: 'vue',
-    url: 'https://github.com/13403111884/tpl-1',
-    downloadUrl: 'https://github.com:13403111884/tpl-1#master'
+  "meteor-vue": {
+    name: 'meteor-vue',
+    description: '引入 vue 的 meteor 模板',
+    url: 'https://github.com/13403111884/meteor-vue',
+    downloadUrl: 'https://github.com:13403111884/meteor-vue#master'
   },
-  "tpl-2": {
-    name: 'tpl-2',
-    description: 'meteor',
-    url: 'https://github.com/13403111884/tpl-2.git',
-    downloadUrl: 'https://github.com:13403111884/tpl-2#master'
+  "meteor-webpack-vue": {
+    name: 'meteor-webpack-vue',
+    description: '引入 vue 以 webpack 为包管理工具的 meteor 模板',
+    url: 'https://github.com/13403111884/meteor-webpack-vue',
+    downloadUrl: 'https://github.com:13403111884/meteor-webpack-vue#master'
   },
-  "tpl-3": {
-    name: 'tpl-1',
-    description: 'cordova',
-    url: 'https://github.com/13403111884/tpl-3.git',
-    downloadUrl: 'https://github.com:13403111884/tpl-3#master'
+  "vue-electron": {
+    name: 'vue-electron',
+    description: '以 vue 开发客户端的模板',
+    url: 'https://github.com/13403111884/vue-electron',
+    downloadUrl: 'https://github.com:13403111884/vue-electron#master'
+  },
+  "vue-cordova": {
+    name: 'vue-cordova',
+    description: '以 vue 移动端APP的模板',
+    url: 'https://github.com/13403111884/vue-cordova',
+    downloadUrl: 'https://github.com:13403111884/vue-cordova#master'
   }
 }
 
