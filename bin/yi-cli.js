@@ -1,5 +1,5 @@
 import program from 'commander'
-import commands from './actions/commands'
+import commands from './../lib/actions/commands'
 
 program
   .version('0.0.1', '-v, --version', '获取版本号')

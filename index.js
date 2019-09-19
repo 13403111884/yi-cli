@@ -3,4 +3,4 @@ require('babel-register') ({
   presets: [ 'env' ]
 })
 
-module.exports = require('./yi-cli.js')
+module.exports = require('./bin/yi-cli')
